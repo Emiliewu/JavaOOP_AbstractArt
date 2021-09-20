@@ -18,5 +18,14 @@ public class Sculpture extends Art{
 		this.material = material;
 	}
 	
+	@Override
+	public void viewArt() {
+		String result = "";
+		result += "Title:       " + getTitle() + "\n";
+		result += "Author:      " + getAuthor() + "\n";
+		result += "Description: " + getDescription() + "\n";
+		result += "Material:   " + this.material + "\n";
+		System.out.println(result);
+	}
 	
 }
